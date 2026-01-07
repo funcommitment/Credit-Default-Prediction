@@ -319,7 +319,7 @@ jupyter notebook credit-default-model.ipynb
 Load trained model and predict on new applications:
 - Model artifacts: `credit_model_final.pkl`, `model_config.pkl`
 - Optimal threshold: 0.020 (from cost optimization)
-- Input: Raw feature dataframe with 11 original columns
+- Input: Raw feature dataframe with 10 original columns
 - Output: Default probabilities and binary predictions
 
 ---
@@ -398,12 +398,6 @@ Load trained model and predict on new applications:
 Credit Fusion and Will Cukierski. Give Me Some Credit. 
 https://kaggle.com/competitions/GiveMeSomeCredit, 2011. Kaggle.
 ```
-
----
-
-## 📄 License
-
-This project is available under the MIT License. Dataset provided by Kaggle under competition terms.
 
 ---
 

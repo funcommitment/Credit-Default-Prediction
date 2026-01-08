@@ -285,7 +285,7 @@ Mean: 0.8660 (±0.0020)
 
 **Core Libraries**:
 ```
-Python 3.8+ • NumPy • pandas • scikit-learn 1.0+ • LightGBM 3.0+
+Python • NumPy • pandas • scikit-learn  • LightGBM 
 XGBoost • SHAP • matplotlib • seaborn • joblib
 ```
 

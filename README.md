@@ -304,14 +304,14 @@ XGBoost • SHAP • matplotlib • seaborn • joblib
 
 ```bash
 # Clone repository
-git clone https://github.com/funcommitment/credit-default-prediction.git
-cd credit-default-prediction
+git clone https://github.com/funcommitment/Credit-Default-Prediction.git
+cd Credit-Default-Prediction
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Launch notebook
-jupyter notebook credit-default-model.ipynb
+jupyter notebook credit_default.ipynb
 ```
 
 ### Usage

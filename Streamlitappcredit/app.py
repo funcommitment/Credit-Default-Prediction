@@ -145,4 +145,5 @@ elif page == "Model Info":
 
     st.subheader("Cost Optimization Analysis")
     st.image('cost_curve.png', caption='Total Cost vs Threshold')
+
     st.write(f"**Optimal Threshold:** {config['threshold']:.3f}")

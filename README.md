@@ -9,7 +9,7 @@
 - **Problem**: Minimize loan default costs with 50:1 FN/FP cost asymmetry in highly imbalanced data (6.7% default rate)
 - **Data**: 150K loan applications with systematic data quality issues (20% missing income, debt ratio corruption)
 - **Solution**: LightGBM + isotonic calibration + cost-based threshold optimization (0.020)
-- **Result**: 93% recall, 86.5% ROC-AUC, $17.27M net annual benefit (estimates assume stable default behavior and average loan size; real-world impact varies by portfolio mix)
+- **Result**: 93% recall, 86.5% ROC-AUC, $15.92M net annual benefit (assuming $10K average loan; real-world impact varies by portfolio mix)
 - **Key Discovery**: Identified "stealth defaulters" (older borrowers with low utilization, clean history) representing $1.35M in missed defaults—provides clear roadmap for model v2 improvements
 
 ---
@@ -157,8 +157,12 @@ Mean: 0.8660 (±0.0020)
 ✅ Defaults Caught: 1,867 / 2,002 = 93.3%
 💰 Prevented Losses: 1,867 × $10,000 = $18,670,000
 💸 Review Cost: 13,950 × $100 = $1,395,000
-📊 Net Benefit: $18.67M - $1.40M = $17,270,000 annually
-📈 ROI: 1,334% (13.3× return on review investment)
+🚨 Missed Defaults: 135 × $10,000 = $1,350,000
+📊 Net Benefit: $18.67M - $1.40M - $1.35M = $15,920,000 annually
+📈 ROI: 579% (5.8× return on operational costs)
+```
+
+**Note:** Model was optimized using $5K FN cost parameter, but real-world impact calculated with $10K average loan.
 ```
 
 **Cost optimization curve**:
@@ -215,11 +219,12 @@ Mean: 0.8660 (±0.0020)
 - FP average probability: 0.099 (9.9%)
 - Model correctly assigns low probabilities near 0.02 decision boundary
 
-**Cost balance achieved**:
-- FN cost: $1.35M
-- FP cost: $1.40M
-- Ratio: ~1:1 (validates 50:1 cost optimization working as designed)
+**Cost balance achieved (at training parameters)**:
+- FN cost: 135 × $5,000 = $675K
+- FP cost: 13,950 × $100 = $1.40M
+- Ratio: ~1:2 (validates 50:1 cost optimization working as designed)
 
+**Note:** When calculated with $10K loans, missed defaults = 135 × $10K = $1.35M
 ---
 
 ## 🎯 Model Interpretability (SHAP Analysis)

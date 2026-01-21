@@ -167,7 +167,7 @@ Mean: 0.8660 (±0.0020)
 
 **Cost optimization curve**:
 
-![Cost Curve](https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/cost_curve.png)
+![Cost Curve](images/cost_curve.png)
   
 *Optimal threshold (0.020) minimizes total cost at $2.07M vs. $10M+ with no model*
 
@@ -231,10 +231,10 @@ Mean: 0.8660 (±0.0020)
 
 ### Feature Importance
 
-![Feature Importance](https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/feature_importance_ranking.jpeg)
-![Credit Usage Relationship](https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/credit_usage_realtionship.jpeg)
-![Misclassification Analysis](https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/misclassification_analysis.jpeg)
-![Individual Risk Explanation](https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/shap_individual_explanation.jpeg)
+![Feature Importance](images/feature_importance_ranking.jpeg)
+![Credit Usage Relationship](images/credit_usage_realtionship.jpeg)
+![Misclassification Analysis](images/misclassification_analysis.jpeg)
+![Individual Risk Explanation](images/shap_individual_explanation.jpeg)
 
 
 **Top drivers of default risk**:

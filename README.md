@@ -167,7 +167,7 @@ Mean: 0.8660 (±0.0020)
 
 **Cost optimization curve**:
 
-<img width="1184" height="731" alt="cost_curve" src="https://github.com/user-attachments/assets/65a0b2de-7967-4b92-bae0-8072a61a610e" />
+<img width="1184" height="731" alt="cost_curve" src="images/cost_curve.png" />
 
 
 *Optimal threshold (0.020) minimizes total cost at $2.07M vs. $10M+ with no model*

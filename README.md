@@ -167,7 +167,7 @@ Mean: 0.8660 (±0.0020)
 
 **Cost optimization curve**:
 
-
+<img width="1184" height="731" alt="cost_curve" src="https://github.com/user-attachments/assets/65a0b2de-7967-4b92-bae0-8072a61a610e" />
 
 
 *Optimal threshold (0.020) minimizes total cost at $2.07M vs. $10M+ with no model*
@@ -232,10 +232,9 @@ Mean: 0.8660 (±0.0020)
 
 ### Feature Importance
 
-![Feature Importance Ranking](images/feature_importance_ranking.jpeg)
-![Misclassification Analysis](images/misclassification_analysis.jpeg)
-![Individual Explanation](images/shap_individual_explanation.jpeg)
-
+![feature_importance_ranking jpeg](https://github.com/user-attachments/assets/f94a3258-3f59-4c26-9d51-3a980a7c91c5)
+![misclassification_analysis jpeg](https://github.com/user-attachments/assets/ae218ed8-591a-4486-8c0a-5dfc2412692b)
+![shap_individual_explanation jpeg](https://github.com/user-attachments/assets/c56ec534-01de-4742-9a39-a610c56a2dcf)
 
 **Top drivers of default risk**:
 

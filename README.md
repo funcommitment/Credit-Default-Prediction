@@ -232,9 +232,9 @@ Mean: 0.8660 (±0.0020)
 
 ### Feature Importance
 
-![feature_importance_ranking jpeg](https://github.com/user-attachments/assets/f94a3258-3f59-4c26-9d51-3a980a7c91c5)
-![misclassification_analysis jpeg](https://github.com/user-attachments/assets/ae218ed8-591a-4486-8c0a-5dfc2412692b)
-![shap_individual_explanation jpeg](https://github.com/user-attachments/assets/c56ec534-01de-4742-9a39-a610c56a2dcf)
+![feature_importance_ranking](images/feature_importance_ranking.jpeg)
+![misclassification_analysis](images/misclassification_analysis.jpeg)
+![shap_individual_explanation](images/shap_individual_explanation.jpeg)
 
 **Top drivers of default risk**:
 

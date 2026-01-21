@@ -161,8 +161,9 @@ Mean: 0.8660 (±0.0020)
 📊 Net Benefit: $18.67M - $1.40M - $1.35M = $15,920,000 annually
 📈 ROI: 579% (5.8× return on operational costs)
 ```
-
+```
 **Note:** Model was optimized using $5K FN cost parameter, but real-world impact calculated with $10K average loan.
+```
 
 **Cost optimization curve**:
 
@@ -235,13 +236,9 @@ Mean: 0.8660 (±0.0020)
 
 **Feature Importance Ranking**
 
----
-
 ![misclassification_analysis](images/misclassification_analysis.jpeg)
 
 **Misclassification Analysis**
-
----
 
 ![shap_individual_explanation](images/shap_individual_explanation.jpeg)
 

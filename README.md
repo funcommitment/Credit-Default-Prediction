@@ -163,9 +163,6 @@ Mean: 0.8660 (±0.0020)
 ```
 
 **Note:** Model was optimized using $5K FN cost parameter, but real-world impact calculated with $10K average loan.
-```
-
-```
 
 **Cost optimization curve**:
 
@@ -235,8 +232,20 @@ Mean: 0.8660 (±0.0020)
 ### Feature Importance
 
 ![feature_importance_ranking](images/feature_importance_ranking.jpeg)
+
+**Feature Importance Ranking**
+
+---
+
 ![misclassification_analysis](images/misclassification_analysis.jpeg)
+
+**Misclassification Analysis**
+
+---
+
 ![shap_individual_explanation](images/shap_individual_explanation.jpeg)
+
+**SHAP Individual Explanation**
 
 **Top drivers of default risk**:
 

@@ -167,7 +167,7 @@ Mean: 0.8660 (±0.0020)
 
 **Cost optimization curve**:
 
-![Cost Curve](images/cost_curve.png)
+![Cost Curve](https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/cost_curve.png)
   
 *Optimal threshold (0.020) minimizes total cost at $2.07M vs. $10M+ with no model*
 

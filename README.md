@@ -165,6 +165,8 @@ Mean: 0.8660 (±0.0020)
 **Note:** Model was optimized using $5K FN cost parameter, but real-world impact calculated with $10K average loan.
 ```
 
+```
+
 **Cost optimization curve**:
 
 <img width="1184" height="731" alt="cost_curve" src="images/cost_curve.png" />

@@ -217,7 +217,7 @@ Mean: 0.8660 (±0.0020)
 **Threshold operating correctly**:
 - FN average probability: 0.010 (1.0%)
 - FP average probability: 0.099 (9.9%)
-- Model correctly assigns low probabilities near 0.02 decision boundary
+- The model assigns low probabilities to stealth defaulters (FN avg probability = 0.01), indicating overconfidence. This is a feature-signal limitation, not a threshold issue.
 
 **Cost balance achieved (at training parameters)**:
 - FN cost: 135 × $5,000 = $675K

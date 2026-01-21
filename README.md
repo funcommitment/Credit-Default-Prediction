@@ -232,17 +232,24 @@ Mean: 0.8660 (±0.0020)
 
 ### Feature Importance
 
-![feature_importance_ranking](images/feature_importance_ranking.jpeg)
 
-**Feature Importance Ranking**
+<p align="center">
+  <img src="images/feature_importance_ranking.jpeg" alt="feature_importance_ranking"/>
+  <br>
+  <b>Feature Importance Ranking</b>
+</p>
 
-![misclassification_analysis](images/misclassification_analysis.jpeg)
+<p align="center">
+  <img src="images/misclassification_analysis.jpeg" alt="misclassification_analysis"/>
+  <br>
+  <b>Misclassification Analysis</b>
+</p>
 
-**Misclassification Analysis**
-
-![shap_individual_explanation](images/shap_individual_explanation.jpeg)
-
-**SHAP Individual Explanation**
+<p align="center">
+  <img src="images/shap_individual_explanation.jpeg" alt="shap_individual_explanation"/>
+  <br>
+  <b>SHAP Individual Explanation</b>
+</p>
 
 **Top drivers of default risk**:
 

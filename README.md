@@ -167,7 +167,7 @@ Mean: 0.8660 (±0.0020)
 
 **Cost optimization curve**:
 
-<img width="1184" height="731" alt="cost_curve" src="https://github.com/user-attachments/assets/4c5412ea-d02c-44d6-9225-45014fcce5d9" />
+<img width="1184" height="731" alt="cost_curve" src="https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/cost_curve.png" />
   
 *Optimal threshold (0.020) minimizes total cost at $2.07M vs. $10M+ with no model*
 
@@ -231,10 +231,10 @@ Mean: 0.8660 (±0.0020)
 
 ### Feature Importance
 
-<img width="1009" height="724" alt="image" src="https://github.com/user-attachments/assets/c2fbf751-f827-4ce5-bf07-54f028bd9a13" />
-<img width="1012" height="745" alt="image" src="https://github.com/user-attachments/assets/c41fbd30-6ac2-475e-8a3f-550bb92a95fd" />
-<img width="1077" height="624" alt="image" src="https://github.com/user-attachments/assets/4c38606d-0dcb-42fd-a2ca-9089f1bf5903" />
-
+<img width="1009" height="724" alt="image" src="https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/feature_importance_ranking.jpeg" />
+<img width="1012" height="745" alt="image" src="https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/credit_usage_realtionship.jpeg" />
+<img width="1077" height="624" alt="image" src="https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/shap_individual_explanation.jpeg" />
+<img width="1009" height="724" alt="image" src="https://github.com/funcommitment/Credit-Default-Prediction/blob/main/images/feature_impact_distribution.jpeg" />
 
 
 **Top drivers of default risk**:

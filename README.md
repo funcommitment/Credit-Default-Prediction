@@ -232,25 +232,30 @@ Mean: 0.8660 (±0.0020)
 
 ### Feature Importance
 
-
+<br>
 <p align="center">
   <img src="images/feature_importance_ranking.jpeg" alt="feature_importance_ranking"/>
-  <br>
+  <br><br>
   <b>Feature Importance Ranking</b>
 </p>
 
+<br>
+
 <p align="center">
   <img src="images/misclassification_analysis.jpeg" alt="misclassification_analysis"/>
-  <br>
+  <br><br>
   <b>Misclassification Analysis</b>
 </p>
 
+<br>
+
 <p align="center">
   <img src="images/shap_individual_explanation.jpeg" alt="shap_individual_explanation"/>
-  <br>
+  <br><br>
   <b>SHAP Individual Explanation</b>
 </p>
 
+<br>
 **Top drivers of default risk**:
 
 1. **Credit Utilization** (most important)

@@ -415,7 +415,7 @@ Load trained model and predict on new applications:
 
 **Author**: [@funcommitment](https://github.com/funcommitment)  
 **Dataset**: [Kaggle - Give Me Some Credit](https://www.kaggle.com/competitions/GiveMeSomeCredit) (Credit Fusion, 2011)  
-**Project Type**: Portfolio project for data science internship applications  
+**Project Type**: Portfolio project 
 
 **Citation**:
 ```

@@ -9,7 +9,7 @@
 - **Problem**: Minimize loan default costs with 50:1 FN/FP cost asymmetry in highly imbalanced data (6.7% default rate)
 - **Data**: 150K loan applications with systematic data quality issues (20% missing income, debt ratio corruption)
 - **Solution**: LightGBM + isotonic calibration + cost-based threshold optimization (0.020)
-- **Result**: 93% recall, 86.5% ROC-AUC, $15.92M net annual benefit (assuming $10K average loan; real-world impact varies by portfolio mix)
+- **Result**: 93% recall, 86.5% ROC-AUC, $7.27M net annual benefit (based on $5K average FN cost, consistent with threshold optimization)
 - **Key Discovery**: Identified "stealth defaulters" (older borrowers with low utilization, clean history) representing $1.35M in missed defaults—provides clear roadmap for model v2 improvements
 
 ---
@@ -152,17 +152,16 @@ Mean: 0.8660 (±0.0020)
 | **Actual: No Default** | 13,927 (TN) | 13,950 (FP) |
 | **Actual: Default** | 135 (FN) | 1,867 (TP) |
 
-**Financial Breakdown** (assuming $10K average loan):
+**Financial Breakdown** (assuming $5K average loan):
 ```
 ✅ Defaults Caught: 1,867 / 2,002 = 93.3%
-💰 Prevented Losses: 1,867 × $10,000 = $18,670,000
+💰 Prevented Losses: 1,867 × $5,000 = $9,335,000
 💸 Review Cost: 13,950 × $100 = $1,395,000
-🚨 Missed Defaults: 135 × $10,000 = $1,350,000
-📊 Net Benefit: $18.67M - $1.40M - $1.35M = $15,920,000 annually
-📈 ROI: 579% (5.8× return on operational costs)
+🚨 Missed Defaults: 135 × $5,000 = $675,000
+📊 Net Benefit: $9.335M - $1.395M - $0.675M = $7,265,000
+📈 ROI: 351%
 ```
 ```
-**Note:** Model was optimized using $5K FN cost parameter, but real-world impact calculated with $10K average loan.
 ```
 
 **Cost optimization curve**:
@@ -210,7 +209,7 @@ Mean: 0.8660 (±0.0020)
 3. Low-utilization defaulters are **rarer** in training data (~7% of defaults)
 
 **Business impact of blind spot**:
-- 135 missed defaults = $1,350,000 in losses
+- 135 missed defaults = $675,000 in losses
 - Represents 6.7% of all defaults in test set
 
 ### Model Validation ✓
@@ -225,7 +224,6 @@ Mean: 0.8660 (±0.0020)
 - FP cost: 13,950 × $100 = $1.40M
 - Ratio: ~1:2 (validates 50:1 cost optimization working as designed)
 
-**Note:** When calculated with $10K loans, missed defaults = 135 × $10K = $1.35M
 ---
 
 ## 🎯 Model Interpretability (SHAP Analysis)
@@ -300,7 +298,7 @@ Mean: 0.8660 (±0.0020)
 
 **Expected impact**:
 - ~50% reduction in false negatives (≈65–70 additional defaults detected)
-- Estimated **$675K** in incremental annual savings
+- Estimated **$340K** in incremental annual savings
 
 
 ---

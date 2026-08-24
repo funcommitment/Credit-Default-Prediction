@@ -81,7 +81,7 @@ page = st.sidebar.radio("Go to", ["Home", "Individual Analysis", "Batch Analysis
 
 if page == "Home":
     st.title("💳 Credit Default Prediction System")
-    st.write("**Business Impact:** $15.92M in annual savings (based on $10K avg loan)")
+    st.write("**Business Impact:** $7.27M in annual savings (based on $5K avg loan)")
     
     st.header("Model Overview")
     
@@ -102,7 +102,7 @@ if page == "Home":
     with col2:
         st.markdown("✅ **Batch processing** for high-volume screening")
         st.markdown("✅ **Regulatory-compliant** interpretability")
-        st.markdown("✅ **$15.92M net annual benefit**")
+        st.markdown("✅ **$7.27M net annual benefit**")
 
 elif page == "Individual Analysis":
     st.title("🔍 Individual Credit Risk Assessment")
@@ -448,7 +448,7 @@ elif page == "Model Info":
     # Dual-tab financial analysis
     st.subheader("Financial Analysis")
     
-    tab1, tab2 = st.tabs(["Model Training Costs", "Real-World Impact"])
+    tab1= st.tabs(["Model Training Costs"])
     
     with tab1:
         st.write("**Cost parameters used during model optimization:**")
@@ -467,21 +467,6 @@ elif page == "Model Info":
         st.write("- **Net Savings: $7.27M** (at training cost parameters)")
         st.caption("This validates the 50:1 cost optimization is working correctly (FN≈FP costs balanced)")
     
-    with tab2:
-        st.write("**Assuming $10,000 average loan size (₹8 Lakh in India):**")
-        st.write("")
-        st.write("**Benefits:**")
-        st.write("- Defaults Caught: 1,867 applications")
-        st.write("- Prevented Losses: 1,867 × $10,000 = **$18.67M**")
-        st.write("")
-        st.write("**Costs:**")
-        st.write("- Review Cost: 13,950 × $100 = $1.40M")
-        st.write("- Missed Defaults: 135 × $10,000 = $1.35M")
-        st.write("- Total Costs: **$2.75M**")
-        st.write("")
-        st.write("**Net Benefit: $15.92M annually**")
-        st.write("**ROI: 579% (5.8× return on operational costs)**")
-        st.info("📍 This represents realistic ROI for lending scenarios with $10K average loan size")
     
     st.markdown("---")
     st.subheader("Hyperparameters")

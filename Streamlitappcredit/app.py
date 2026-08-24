@@ -448,7 +448,7 @@ elif page == "Model Info":
     # Dual-tab financial analysis
     st.subheader("Financial Analysis")
     
-    tab1= st.tabs(["Model Training Costs"])
+    tab1, = st.tabs(["Model Training Costs"])
     
     with tab1:
         st.write("**Cost parameters used during model optimization:**")

@@ -10,7 +10,7 @@
 - **Data**: 150K loan applications with systematic data quality issues (20% missing income, debt ratio corruption)
 - **Solution**: LightGBM + isotonic calibration + cost-based threshold optimization (0.020)
 - **Result**: 93% recall, 86.5% ROC-AUC, $7.27M net annual benefit (based on $5K average FN cost, consistent with threshold optimization)
-- **Key Discovery**: Identified "stealth defaulters" (older borrowers with low utilization, clean history) representing $1.35M in missed defaults—provides clear roadmap for model v2 improvements
+- **Key Discovery**: Identified "stealth defaulters" (older borrowers with low utilization, clean history) representing $675K in missed defaults—provides clear roadmap for model v2 improvements
 
 ---
 

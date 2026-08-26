@@ -20,7 +20,6 @@ After researching the data science job market, I identified **credit risk modeli
 - **High industry demand** in financial services with explosive job growth
 - **Real business impact** measured in dollars, not just accuracy scores
 - **Transferable skills** applicable across fintech, banking, and lending platforms
-- **Lower competition** compared to saturated domains (computer vision, NLP)
 
 
 This project demonstrates production-relevant capabilities: handling severe class imbalance, optimizing for asymmetric business costs, and delivering interpretable models suitable for regulated industries.

@@ -1,6 +1,6 @@
 # Credit Default Risk Prediction
 
-**Cost-optimized ML system for predicting loan defaults with explainable AI and comprehensive error analysis.**
+**Cost-optimized ML system for predicting loan defaults with explainable predictions and comprehensive error analysis.**
 
 ---
 
